@@ -6,9 +6,9 @@ type Theme = "light" | "dark" | "system";
 
 export default function Themes() {
   const [selectedTheme, setSelectedTheme] = useState<Theme>("light");
-  // inferes so no problem!
+  // infers so we dont need to use <string>
   // above we can infer the type of selectedTheme as "light" | "dark" | "system"
-  // as useState("light"); is still jsut a string
+  // as useState("light"); is still just a string
   // in this case this is an example where we want ot use the type of useState
 
   return (
@@ -86,7 +86,7 @@ convertToArrayRestrict("hello");
 }
 - relationship of properties in an object
 - relationship of two parameters in a function
-- relationship of a partimer and a return value of a function
+- relationship of a paramiter and a return value of a function
 
 
 */
